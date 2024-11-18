@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_email_vertification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layoutDirection="ltr"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:text="نسخه ی قدیمی برنامه منسوخ شده است.شما بایستی برنامه را به روزرسانی کنید."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatenewversion_tx"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="به روز رسانی"
+            android:id="@+id/must_update_button"
+            android:textColor="@color/btn_login_bg"
+            android:background="@drawable/button_01"
+            android:layout_margin="3dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خروج"
+            android:id="@+id/exit_button"
+            android:textColor="@color/btn_login_bg"
+            android:background="@drawable/button_01"
+            android:layout_margin="3dp" />
+    </LinearLayout>
+
+</LinearLayout>

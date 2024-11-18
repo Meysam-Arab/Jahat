@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layoutDirection="ltr"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="300dp"
+        android:background="@drawable/edittext_rounded_corners_02"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="لینک کانال"
+        android:id="@+id/title_et" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_rounded_corners_02"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:hint="رمز"
+        android:id="@+id/unqId_et" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ویرایش"
+        android:id="@+id/btnEdit_find"
+        android:textColor="@color/btn_login_bg"
+        android:background="@drawable/button_01"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+</LinearLayout>

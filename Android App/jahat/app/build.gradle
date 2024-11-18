@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "com.fardan7eghlim.jahat"
+
+        manifestPlaceholders = [onesignal_app_id: "6329d6d0-6028-45f0-b194-23440b7d1f64",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "jahat-e977f"]
+
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/androidEasyCaptcha.jar')
+    compile 'com.onesignal:OneSignal:3.+@aar'
+    // Required for OneSignal, even if you have added FCM.
+    compile 'com.google.android.gms:play-services-gcm:+'
+    // Required for geotagging
+    compile "com.google.android.gms:play-services-location:+"
+    //image loader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+}
