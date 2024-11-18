@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\libs\androidEasyCaptcha.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19cc909e41dce6c8cd21add97c06d50cda884c34">
+        <dex dex="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\build\intermediates\transforms\dex\debug\folders\1000\2\androidEasyCaptcha_fded86fd6310d38305314e9ec5301523d53ef743\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2f1b86b40cbeeec1b088ddac6df4ac0907af5136\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4567df153ea14fc7e5a6b6cce330d352fc86f1cb">
+        <dex dex="C:\Users\Meysam\AndroidStudioProjects\Jahat\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_593af0cf1558b75b7500c408b6d30764ad5302fe\classes.dex" />
+    </item>
+
+</items>
